@@ -27,6 +27,16 @@ var API_KEY = '';
 var ANALYTICS_COMPANY = '';
 /* provided */
 
+// Create default handlers
+var newSessionHandlers = {
+    'LaunchRequest': function () {
+        //Skill was launched
+
+        //Say Hello!
+        this.emit(':tell', "Hello NAME");
+    }
+};
+
 //Speech strings
 var languageStrings = {
     "en-US": {
